@@ -13,7 +13,7 @@ class App extends Component {
         </div>
         <p className="App-intro">
         </p>
-        <Blocks count="105" columns="10" />
+        <Blocks count="105" />
       </div>
     );
   }
