@@ -1,0 +1,15 @@
+.block {
+  position: relative;
+  background-color: green;
+  text-align: center;
+  width: calc(10% - 2px);
+  box-sizing: border-box;
+  margin: 1px;
+}
+
+
+.block:before {
+  content: "";
+  display: block;
+  padding-top: 100%;
+}

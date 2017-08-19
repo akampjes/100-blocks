@@ -1,0 +1,11 @@
+.blocks-container {
+  display: flex;
+  flow-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.container-wrapper {
+  margin: auto;
+  max-width: 800px;
+}
