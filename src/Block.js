@@ -3,28 +3,18 @@ import React, { Component } from 'react';
 import './Block.css'
 
 class Block extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      selected: false,
-    };
-  }
-
-  clicked() {
-    this.setState({selected: !this.state.selected});
-  }
-
   class_name() {
-    if(this.state.selected) {
-      return 'block selected'
-    } else {
-      return 'block'
-    }
+    return "block " + this.props.color;
   }
 
   render () {
     return (
-      <div className={this.class_name()} onClick={() => this.clicked()}>
+      <div
+        className={this.class_name()}
+        onMouseDown={() => { this.props.onMouseDown()}}
+        onMouseUp={() => { this.props.onMouseUp()}}
+        onMouseOver={() => { this.props.onMouseOver()}}
+        onClick={() => { this.props.onClick() }} >
       </div>
     );
   }

@@ -11,6 +11,18 @@
   background-color: red;
 }
 
+.block.green {
+  background-color: green;
+}
+
+
+.block.red {
+  background-color: red;
+}
+
+.block.grey {
+  background-color: gray;
+}
 
 .block:before {
   content: "";
